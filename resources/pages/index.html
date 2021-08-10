@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        background-color: lightblue;
+        font-family: sans-serif;
+      }
+
+      label,
+      input,
+      option,
+      button {
+        display: block;
+      }
+    </style>
+    <title>Openweather API</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Find out the weather around your area.</h1>
+        <h2>I know there's bigger and better ways to do that but this is mine 😂</h2>
+      </header>
+      <section class="site-section">
+        <form action="/" method="POST">
+          <label for="apiKey">API Key from Openweathermap.com</label>
+          <input autocomplete="off" type="text" id="apiKey" name="apiKey">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city">
+          <label for="unit">Units</label>
+          <select name="unit" id="unit">
+            <option value="">--Choose a unit of measurement--</option>
+            <option value="imperial">Imperial</option>
+            <option value="metric">Metric</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>
